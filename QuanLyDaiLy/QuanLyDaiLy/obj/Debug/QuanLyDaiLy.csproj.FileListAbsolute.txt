@@ -1,1 +1,2 @@
 E:\CNTT\Junior\LTWin\PROJECT\QuanLyDaiLy\QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe.config
+C:\Users\MinhHuu\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe.config
