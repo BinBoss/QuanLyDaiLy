@@ -9,6 +9,7 @@ namespace QuanLyDaiLy
     class MatHangDTO
     {
         private string _maMatHang;
+        private string _tenMatHang;
         private int _donGia;
         private string _donViTinh;
 
@@ -16,6 +17,12 @@ namespace QuanLyDaiLy
         {
             get { return _maMatHang; }
             set { _maMatHang = value; }
+        }
+
+        public string TenMatHang
+        {
+            get { return _tenMatHang; }
+            set { _tenMatHang = value; }
         }
 
         public int DonGia

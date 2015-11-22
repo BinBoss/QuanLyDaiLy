@@ -22,3 +22,5 @@ C:\Users\LEDUCI\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\bin\Debug\Q
 C:\Users\LEDUCI\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\bin\Debug\QuanLyDaiLy.pdb
 C:\Users\LEDUCI\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe
 C:\Users\LEDUCI\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.pdb
+C:\Users\MinhHuu\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe
+C:\Users\MinhHuu\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.pdb

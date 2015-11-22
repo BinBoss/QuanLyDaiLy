@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using System.Collections;
+using System.Data.OleDb;
 
 namespace QuanLyDaiLy
 {
@@ -13,7 +9,7 @@ namespace QuanLyDaiLy
         private DaiLyDTO info = new DaiLyDTO();
         private DaiLyDAO data = new DaiLyDAO();
 
-        public DaiLyDTO HocSinh
+        public DaiLyDTO DaiLy
         {
             get
             {
