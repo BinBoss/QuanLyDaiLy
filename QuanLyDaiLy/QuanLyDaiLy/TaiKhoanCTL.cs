@@ -40,6 +40,5 @@ namespace QuanLyDaiLy
         {
             return data.getDsTaiKhoan();
         }
-    {
     }
 }
