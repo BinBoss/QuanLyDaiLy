@@ -44,7 +44,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietPhieuXuatHangCTL.cs" />
+    <Compile Include="ChiTietPhieuXuatHangDAO.cs" />
+    <Compile Include="ChiTietPhieuXuatHangDTO.cs" />
+    <Compile Include="CongNoDaiLyCTL.cs" />
+    <Compile Include="CongNoDaiLyDAO.cs" />
+    <Compile Include="CongNoDaiLyDTO.cs" />
+    <Compile Include="DaiLyCTL.cs" />
+    <Compile Include="DaiLyDAO.cs" />
     <Compile Include="DaiLyDTO.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="DoanhSoDaiLyCTL.cs" />
+    <Compile Include="DoanhSoDaiLyDAO.cs" />
+    <Compile Include="DoanhSoDaiLyDTO.cs" />
     <Compile Include="FormChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,8 +141,29 @@
     <Compile Include="FormThongTinSanPham.Designer.cs">
       <DependentUpon>FormThongTinSanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoaiDaiLyCTL.cs" />
+    <Compile Include="LoaiDaiLyDAO.cs" />
+    <Compile Include="LoaiDaiLyDTO.cs" />
+    <Compile Include="MatHangCTL.cs" />
+    <Compile Include="MatHangDAO.cs" />
+    <Compile Include="MatHangDTO.cs" />
+    <Compile Include="PhieuGiaoDichCTL.cs" />
+    <Compile Include="PhieuGiaoDichDAO.cs" />
+    <Compile Include="PhieuGiaoDichDTO.cs" />
+    <Compile Include="PhieuThuTienCTL.cs" />
+    <Compile Include="PhieuThuTienDAO.cs" />
+    <Compile Include="PhieuThuTienDTO.cs" />
+    <Compile Include="PhieuXuatHangCTL.cs" />
+    <Compile Include="PhieuXuatHangDAO.cs" />
+    <Compile Include="PhieuXuatHangDTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanCTL.cs" />
+    <Compile Include="QuanDAO.cs" />
+    <Compile Include="QuanDTO.cs" />
+    <Compile Include="TaiKhoanCTL.cs" />
+    <Compile Include="TaiKhoanDAO.cs" />
+    <Compile Include="TaiKhoanDTO.cs" />
     <EmbeddedResource Include="FormChangePassword.resx">
       <DependentUpon>FormChangePassword.cs</DependentUpon>
     </EmbeddedResource>
