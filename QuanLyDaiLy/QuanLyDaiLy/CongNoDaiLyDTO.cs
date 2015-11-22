@@ -14,7 +14,7 @@ namespace QuanLyDaiLy
         private int _noCuoi;
         private int _phatSinh;
         private int _soNoDaTra;
-        private DateTime _thoiGian;
+        private DateTime _thang;
 
         public string MaBaoCao
         {
@@ -50,10 +50,10 @@ namespace QuanLyDaiLy
             get { return _soNoDaTra; }
             set { _soNoDaTra = value; }
         }
-        public DateTime ThoiGian
+        public DateTime Thang
         {
-            get { return _thoiGian; }
-            set { _thoiGian = value; }
+            get { return _thang; }
+            set { _thang = value; }
         }
     }
 }

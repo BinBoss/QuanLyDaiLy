@@ -12,7 +12,7 @@ namespace QuanLyDaiLy
         private string _maDaiLy;
         private int _soPhieuXuatHang;
         private int _tongGiaTri;
-        private DateTime _thoiGian;
+        private DateTime _thang;
 
         public string MaBaoCao
         {
@@ -38,10 +38,10 @@ namespace QuanLyDaiLy
             set { _tongGiaTri = value; }
         }
 
-        public DateTime ThoiGian
+        public DateTime Thang
         {
-            get { return _thoiGian; }
-            set { _thoiGian = value; }
+            get { return _thang; }
+            set { _thang = value; }
         }
     }
 }

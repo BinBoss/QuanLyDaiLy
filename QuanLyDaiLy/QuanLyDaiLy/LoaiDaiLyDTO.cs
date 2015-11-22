@@ -10,6 +10,13 @@ namespace QuanLyDaiLy
     {
         private string _maLoaiDaiLy;
         private string _tenLoaiDaiLy;
+        private int _soTienNoToiDa;
+
+        public int SoTienNoToiDa
+        {
+            get { return _soTienNoToiDa; }
+            set { _soTienNoToiDa = value; }
+        }
 
         public string MaLoaiDaiLy
         {

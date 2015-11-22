@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.Data.SqlClient;
-using System.Data.OleDb;
 using System.Data;
+using System.Data.OleDb;
 using System.Collections;
 
 namespace QuanLyDaiLy 
@@ -21,7 +15,7 @@ namespace QuanLyDaiLy
         public ArrayList getDsDaiLy()
         {
             connect();
-            string query = "SELECT * FROM DAILY";
+            string query = "SELECT * FROM DaiLy";
             adapter = new OleDbDataAdapter(query, connection);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
@@ -29,26 +23,6 @@ namespace QuanLyDaiLy
 
             return arr;
         }
-
-        //public HocSinhDTO[] getDsHocSinh()
-        //{
-        //    connect();
-        //    string query = "SELECT * FROM HOCSINH";
-        //    adapter = new OleDbDataAdapter(query, connection);
-        //    DataSet dataset = new DataSet();
-        //    adapter.Fill(dataset);
-        //    HocSinhDTO[] arr;
-
-        //    DataTable dt = dataset.Tables[0];
-        //    int i, n = dt.Rows.Count;
-        //    arr = new HocSinhDTO[n];
-        //    for (i = 0; i < n; i++)
-        //    {
-        //        object hs = GetDataFromDataRow(dt, i);
-        //        arr[i] = (HocSinhDTO)hs;
-        //    }
-        //    return arr;
-        //}
 
         protected override object GetDataFromDataRow(DataTable dt, int i)
         {
@@ -67,7 +41,7 @@ namespace QuanLyDaiLy
 
         public void insert(DaiLyDTO info)
         {
-            string insertCommand = "INSERT INTO HOCSINH VALUES('" +
+            string insertCommand = "INSERT INTO DaiLy VALUES('" +
                 info.MaDL + "', '" +
                 info.TenDL + "', '" +
                 info.MaLoaiDL + "', '" +
@@ -82,15 +56,15 @@ namespace QuanLyDaiLy
 
         public void update(DaiLyDTO info)
         {
-            string updateCommand = "UPDATE DAILY " +
-                                    "SET TenDL = '" + info.TenDL + "', " +
-                                    " DiaChi = '" + info.DiaChi + "', " +
-                                    " MaLoaiDL = '" + info.MaLoaiDL + "', " +
-                                    " NgayTiepNhan = '" + info.NgayTiepNhan.ToShortDateString() + "', " +
-                                    " MaQuan = '" + info.MaQuan + "'," +
-                                    " Email = '" + info.Email + "', " +
+            string updateCommand = "UPDATE DaiLy " +
+                                    "SET TenDaiLy = '" + info.TenDL + "', " +
+                                    " LoaiDaiLy = '" + info.MaLoaiDL + "', " +
                                     " SDT = " + info.SDT +
-                                    " WHERE MaHocSinh = '" + info.MaDL + "'";
+                                    " Email = '" + info.Email + "', " +
+                                    " DiaChi = '" + info.DiaChi + "', " +
+                                    " Quan = '" + info.MaQuan + "'," +
+                                    " NgayTiepNhan = '" + info.NgayTiepNhan.ToShortDateString() + "', " +
+                                    " WHERE MaDaiLy = '" + info.MaDL + "'";
 
 
             executeNonQuery(updateCommand);
@@ -98,7 +72,7 @@ namespace QuanLyDaiLy
 
         public void delete(string maDL)
         {
-            string deleteCommand = "DELETE FROM DAILY WHERE MaDL = '" + maDL + "'";
+            string deleteCommand = "DELETE FROM DaiLy WHERE MaDL = '" + maDL + "'";
             executeNonQuery(deleteCommand);
         }
         
